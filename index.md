@@ -1,10 +1,16 @@
 ---
 layout: default
-title: "Index of Cards"
+title: "Card Index"
 ---
 
-## All Cards
+# Card Index
 
-{% for card in site.cards %}
-- [{{ card.title }}]({{ card.url }})
+Here are the cards:
+
+<ul>
+{% for card in site.pages %}
+  {% if card.path contains 'cards/' %}
+    <li><a href="{{ card.url }}">{{ card.title }}</a></li>
+  {% endif %}
 {% endfor %}
+</ul>
