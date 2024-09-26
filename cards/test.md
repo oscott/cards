@@ -1,6 +1,6 @@
 ---
 layout: card
-title: "The Great Filter (Biscostate6ix)"
+title: "test"
 artist: "Oliver Scott"
 year: 2018
 location: "Falmouth Art Gallery"
