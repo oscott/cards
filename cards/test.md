@@ -1,5 +1,5 @@
 ---
-layout: card
+layout: cards
 title: "test"
 artist: "Oliver Scott"
 year: 2018
