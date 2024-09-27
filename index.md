@@ -1,5 +1,5 @@
 ---
-layout: cards
+layout: default
 title: "Card Index"
 ---
 
