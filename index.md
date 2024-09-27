@@ -3,8 +3,6 @@ layout: front
 title: "Card Index"
 ---
 
-# Card Index
-
 Here are the cards:
 
 <ul>

@@ -8,33 +8,35 @@
     </head>
     <body>
         <ul>
-            {% for p in site.data.primary_nav -%}
+            {% for p in site.data.primary_nav -%} {% if p.show_on_mobile -%}
             <li
                 {%-
                 if
                 p.link=""
                 ="/"
                 -%}
-                {%
+                {%-
                 if
                 page.url=""
-                ="p.link"
+                ="/"
                 %}
                 class="current"
-                {%-
+                aria-current="page"
+                {%
                 endif
                 -%}
                 {%
                 else
                 -%}
-                {%
+                {%-
                 if
                 page.url
                 contains
                 p.link
                 %}
                 class="current"
-                {%-
+                aria-current="page"
+                {%
                 endif
                 -%}
                 {%
@@ -43,7 +45,12 @@
             >
                 <a href="{{ p.link | relative_url }}">{{ p.title }}</a>
             </li>
-            {% endfor -%}
+            {% endif -%} {% endfor -%}
+            <li>
+                <a href="{{ site.repository }}" target="_blank" rel="noopener"
+                    >GitHub</a
+                >
+            </li>
         </ul>
         <hr />
         <h1>{{ page.title }}</h1>
