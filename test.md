@@ -10,3 +10,4 @@ related_cards: ["The Great Filter (14 Sticks)", "Reality Mapping"]
 ---
 # This is a test card
 it is not ideal
+ok
